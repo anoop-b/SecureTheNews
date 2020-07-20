@@ -193,9 +193,12 @@ query ($id: ID!) {
     domain
     latest_scan{
           grade
-          timestamp
-          hsts
           valid_https
+        	downgrades_https
+          defaults_to_https
+          hsts
+          hsts_preload_ready
+          hsts_preloaded
         }
   }
 }
