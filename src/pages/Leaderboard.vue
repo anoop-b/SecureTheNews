@@ -2,7 +2,7 @@
   <Layout>
     <div>
       <div v-for="{ node } in $page.allBlogPost.edges" :key="node.id">
-        <EventCard :event="node" :color="hrColors[index % hrColors.length]" />
+        <EventCard :event="node"/>
       </div>
     </div>
     <div class="flex justify-center mb-8">
