@@ -7,8 +7,7 @@
         }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link nav--yellow" to="/">Home</g-link>
-        <g-link class="nav__link nav--red" to="/events">Events</g-link>
+        <g-link class="nav__link nav--yellow" to="/leaderboard">leaderboard</g-link>
       </nav>
     </header>
     <transition name="fade" appear>
@@ -16,7 +15,7 @@
         <slot />
       </main>
     </transition>
-    <footer>
+    <!-- <footer>
       Built with
       <a
         href="https://gridsome.org/docs"
@@ -33,7 +32,7 @@
         class="link--blue"
         >Tyler</a
       >
-    </footer>
+    </footer> -->
   </div>
 </template>
 
@@ -46,12 +45,6 @@ query {
 </static-query>
 
 <style>
-/* 
-"hsl(43, 100%, 49%)", Airtable Yellow
-"hsl(197, 100%, 55%)", Airtable Blue
-"hsl(345, 70%, 50%)"  Airtable Red 
-*/
-
 /* Transition */
 .fade-enter-active {
   transition: opacity 0.5s;
@@ -101,10 +94,6 @@ footer {
   font-weight: bold;
 }
 
-.handwriting {
-  font-family: "Patrick Hand", cursive;
-}
-
 .flex-row {
   display: flex;
   align-items: center;
@@ -134,15 +123,6 @@ footer {
   background-color: hsl(197, 100%, 90%);
 }
 
-.nav--red {
-  border: 4px solid hsl(345, 70%, 50%);
-  color: #000000;
-  border-radius: 10px;
-}
-
-.nav--red:hover {
-  background-color: hsl(345, 100%, 90%);
-}
 
 .nav--yellow {
   border: 4px solid hsl(43, 100%, 49%);
@@ -182,11 +162,6 @@ footer {
   }
 }
 
-.link--red {
-  border-bottom: 3px solid hsl(345, 70%, 50%);
-  text-decoration: none;
-}
-
 .link--blue {
   border-bottom: 3px solid hsl(197, 100%, 55%);
   text-decoration: none;
@@ -197,8 +172,4 @@ footer {
   text-decoration: none;
 }
 
-.link--gridsome {
-  border-bottom: 3px solid hsl(157, 55%, 58%);
-  text-decoration: none;
-}
 </style>
