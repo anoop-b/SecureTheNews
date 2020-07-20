@@ -5,12 +5,13 @@
     >
       <div class="sm:text-center lg:text-left">
         <h2
-          class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
+          class="text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
         >
           {{ $page.blogPost.name }}
-          <br class="xl:hidden" />
-          <span class="text-indigo-600">Grade : {{$page.blogPost.latest_scan.grade}}</span>
+          <br/>
+          <span class="text-indigo-600">Security Grade : {{$page.blogPost.latest_scan.grade}}</span>
         </h2>
+        <div class="py-4">
         <div class="p-3 bg-white shadow overflow-hidden sm:rounded-lg">
           <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
             <h3 class="text-lg leading-6 font-medium text-gray-900">
@@ -175,6 +176,7 @@
               </a>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </main>
