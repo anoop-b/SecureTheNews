@@ -1,6 +1,12 @@
-# Default starter for Gridsome
+# Secure the News - JamStack
 
-This is the project you get when you run `gridsome create new-project`.
+This website is created using Gridsome and TailwindCss to demonstrate the [JamStack](https://jamstack.org/) approach to building static websites.
+
+API endopint URL is :
+
+`https://securethe.news/api/v1/sites/`
+
+## Usage
 
 ### 1. Install Gridsome CLI tool if you don't have
 
@@ -8,7 +14,6 @@ This is the project you get when you run `gridsome create new-project`.
 
 ### 2. Create a Gridsome project
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+1. `cd folder-name` to open the folder
+2. `gridsome develop` to start a local dev server at `http://localhost:8080`
+3. Happy coding 🎉🙌
