@@ -2,12 +2,14 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/" class="handwriting site-title">{{
+        <g-link to="/" class="site-title">{{
           $static.metadata.siteName
         }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link nav--yellow" to="/leaderboard/">Leaderboard</g-link>
+        <g-link class="nav__link nav--yellow" to="/leaderboard/"
+          >Leaderboard</g-link
+        >
       </nav>
     </header>
     <transition name="fade" appear>
@@ -15,7 +17,7 @@
         <slot />
       </main>
     </transition>
-    <footer class='w-full text-center border-t border-grey p-4 pin-b'>
+    <footer class="w-full text-center border-t border-grey p-4 pin-b">
       Built in quarantine with &#x1F499; by
       <a
         href="https://twitter.com/anoopkumarsb"
@@ -84,10 +86,6 @@ main {
   align-items: center;
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
 .site-title {
   padding: 5px 15px;
   text-decoration: none;
@@ -97,17 +95,6 @@ main {
   font-size: 1.5rem;
   margin: 8px 0;
 }
-
-.nav--blue {
-  border: 4px solid hsl(197, 100%, 55%);
-  color: black;
-  border-radius: 10px;
-}
-
-.nav--blue:hover {
-  background-color: hsl(197, 100%, 90%);
-}
-
 
 .nav--yellow {
   border: 4px solid hsl(43, 100%, 49%);
@@ -147,14 +134,8 @@ main {
   }
 }
 
-.link--blue {
-  border-bottom: 3px solid hsl(197, 100%, 55%);
-  text-decoration: none;
-}
-
 .link--yellow {
   border-bottom: 3px solid hsl(43, 100%, 49%);
   text-decoration: none;
 }
-
 </style>
