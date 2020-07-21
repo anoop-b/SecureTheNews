@@ -7,7 +7,7 @@
         }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link nav--yellow" to="/leaderboard">leaderboard</g-link>
+        <g-link class="nav__link nav--yellow" to="/leaderboard/">Leaderboard</g-link>
       </nav>
     </header>
     <transition name="fade" appear>
