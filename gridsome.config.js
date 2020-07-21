@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Secure The News',
+  siteUrl: 'https://anoop-b.github.io',
+  pathPrefix: '/SecureTheNews',
   templates: {
     BlogPost: [
       {
