@@ -20,7 +20,13 @@
 
 <page-query>
 query ($page: Int) {
-  allBlogPost(perPage: 10, page: $page) @paginate {
+  allBlogPost(
+    perPage: 10, 
+    page: $page,
+    sort:{
+      by:	"latest_scan.grade"
+      order:ASC
+  }) @paginate {
      pageInfo {
       totalPages
       currentPage
@@ -57,15 +63,6 @@ query ($page: Int) {
     },
     metaInfo: {
       title: "Scan Results",
-    },
-    data() {
-      return {
-        hrColors: [
-          "#FCB400", // Airtable Yellow
-          "#18BFFF", // Airtable Blue
-          "#D92654", // Airtable Red
-        ],
-      };
     },
   };
 </script>
