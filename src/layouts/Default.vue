@@ -15,24 +15,16 @@
         <slot />
       </main>
     </transition>
-    <!-- <footer>
-      Built with
+    <footer class='w-full text-center border-t border-grey p-4 pin-b'>
+      Built in quarantine with &#x1F499; by
       <a
-        href="https://gridsome.org/docs"
-        target="_blank"
-        rel="noopener"
-        class="link--gridsome"
-        >Gridsome</a
-      >
-      by
-      <a
-        href="https://twitter.com/PichuPlayer"
+        href="https://twitter.com/anoopkumarsb"
         target="_blank"
         rel="noopener"
         class="link--blue"
-        >Tyler</a
+        >Anoop</a
       >
-    </footer> -->
+    </footer>
   </div>
 </template>
 
@@ -79,13 +71,6 @@ body {
 
 main {
   flex-grow: 1;
-}
-
-footer {
-  text-align: center;
-  width: 100%;
-  max-width: inherit;
-  padding: 20px 0;
 }
 
 .nav__link {
