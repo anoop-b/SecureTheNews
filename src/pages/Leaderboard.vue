@@ -24,8 +24,8 @@ query ($page: Int) {
     perPage: 10, 
     page: $page,
     sort:{
-      by:	"latest_scan.grade"
-      order:ASC
+      by:	"latest_scan.score"
+      order:DESC
   }) @paginate {
      pageInfo {
       totalPages
