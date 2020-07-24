@@ -23,7 +23,7 @@
         href="https://twitter.com/anoopkumarsb"
         target="_blank"
         rel="noopener"
-        class="link--blue"
+        class="hover:underline text-blue-500 text-lg"
         >Anoop</a
       >
     </footer>
