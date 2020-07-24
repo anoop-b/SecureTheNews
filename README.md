@@ -17,3 +17,7 @@ API endopint URL is :
 1. `cd folder-name` to open the folder
 2. `gridsome develop` to start a local dev server at `http://localhost:8080`
 3. Happy coding 🎉🙌
+
+## Resources
+
+- Backend API and original project by [Freedom of Press](https://github.com/freedomofpress/securethenews)
