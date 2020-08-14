@@ -2,12 +2,16 @@
   <div class="layout">
     <header class="header p-2">
       <strong>
-        <g-link to="/" class="site-title">{{
-          $static.metadata.siteName
-        }}</g-link>
+        <g-link
+          to="/"
+          class="shadow-xl border-2 border-indigo-500 px-4 py-2 text-indigo-500 text-2xl rounded"
+          >{{ $static.metadata.siteName }}</g-link
+        >
       </strong>
-      <nav class="nav">
-        <g-link class="nav__link nav--yellow" to="/leaderboard/"
+      <nav class="nav p-2">
+        <g-link
+          class="shadow-xl border-2 border-indigo-500 px-4 py-2 text-indigo-500 text-2xl hover:text-white hover:bg-indigo-500 rounded"
+          to="/leaderboard/"
           >Leaderboard</g-link
         >
       </nav>
@@ -86,26 +90,6 @@ main {
   align-items: center;
 }
 
-.site-title {
-  padding: 5px 15px;
-  text-decoration: none;
-  background-color: hsl(197, 100%, 55%);
-  color: black;
-  border: 4px solid hsl(197, 100%, 55%);
-  font-size: 1.5rem;
-  margin: 8px 0;
-}
-
-.nav--yellow {
-  border: 4px solid hsl(43, 100%, 49%);
-  color: #000000;
-  border-radius: 10px;
-}
-
-.nav--yellow:hover {
-  background-color: hsl(43, 100%, 90%);
-}
-
 .header * {
   /* Prevent Margin Collapse */
   display: inline-block;
@@ -132,10 +116,5 @@ main {
     height: 80px;
     flex-direction: row;
   }
-}
-
-.link--yellow {
-  border-bottom: 3px solid hsl(43, 100%, 49%);
-  text-decoration: none;
 }
 </style>
