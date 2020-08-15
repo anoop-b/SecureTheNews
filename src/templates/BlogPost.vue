@@ -9,17 +9,17 @@
         >
           {{ $page.blogPost.name }}
           <br />
-          <span class="text-indigo-600"
+          <span class="text-5xl text-indigo-600"
             >Security Grade : {{ $page.blogPost.latest_scan.grade }}</span
           >
         </h2>
         <div class="py-4">
           <div class="p-3 bg-white shadow-2xl overflow-hidden sm:rounded-lg">
             <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
-              <h3 class="text-lg leading-6 font-medium text-gray-900">
+              <h3 class="text-lg leading-6 text-gray-900">
                 Website Scan Results
               </h3>
-              <p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">
+              <p class="mt-1 max-w-2xl text-sm leading-5 text-indigo-500">
                 {{ $page.blogPost.name }}
               </p>
             </div>
