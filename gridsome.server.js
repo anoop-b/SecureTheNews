@@ -24,29 +24,4 @@ module.exports = function (api) {
         })
       }
     })
-
-    // api.createPages(async ({ graphql, createPage }) => {
-    //   const { data } = await graphql(`{
-    //     allBlogPosts {
-    //       edges {
-    //         node {
-    //           path
-    //           id
-    //           name
-    //           domain
-    //         }
-    //       }
-    //     }
-    //   }`)
-  
-    //   data.allBlogPosts.edges.forEach(({ node }) => {
-    //     createPage({
-    //       path: `/about/${node.id}`,
-    //       component: './src/templates/details.vue',
-    //       context: {
-    //         id: node.id
-    //       }
-    //     })
-    //   })
-    // })
 }
