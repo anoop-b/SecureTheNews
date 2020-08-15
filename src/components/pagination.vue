@@ -1,14 +1,14 @@
 <template>
   <ul class="flex pl-0 list-none rounded my-2">
 
-    <li class="w-10 relative block text-center py-2 leading-tight bg-white border border-gray-300 text-black ml-0 mr-1 rounded hover:bg-gray-300" v-if="!isFirstPage(currentPage, totalPages)">
+    <li class="w-10 relative block text-center py-2 leading-tight bg-white border border-gray-300 text-black ml-0 mr-1 rounded hover:bg-indigo-200" v-if="!isFirstPage(currentPage, totalPages)">
       <g-link :to="previousPage(currentPage,totalPages)" class="page-link" tabindex="-1" >&laquo;</g-link>
     </li>
 
     <li 
     v-for="page in pages" :key="page.name"
     v-bind:class="[isCurrentPage(currentPage, page.name) ? 'border-l-2 border-l-black' : '']"
-    class="w-10 relative block py-2 text-center leading-tight bg-white border border-gray-300 text-black rounded hover:bg-gray-300 ml-1 mr-1">
+    class="w-10 relative block py-2 text-center leading-tight bg-white border border-gray-300 text-black rounded hover:bg-indigo-200 ml-1 mr-1">
       <g-link
           :to="page.link"
           class="page-link"
@@ -17,7 +17,7 @@
         >{{page.name}}</g-link>
     </li>
 
-    <li class="w-10 relative block py-2 text-center leading-tight bg-white border border-gray-300 text-black ml-1 rounded hover:bg-gray-300" v-if="!isLastPage(currentPage, totalPages)">
+    <li class="w-10 relative block py-2 text-center leading-tight bg-white border border-gray-300 text-black ml-1 rounded hover:bg-indigo-200" v-if="!isLastPage(currentPage, totalPages)">
       <g-link :to="nextPage(currentPage,totalPages)" class="page-link" tabindex="-1" >&raquo;</g-link>
     </li>
   </ul>
