@@ -1,12 +1,12 @@
 <template>
   <!-- This is the Event Card Preview Component-->
-  <div class="p-2 max-w-sm w-full lg:max-w-full ">
-    <div class="border-separate border-2 border-gray-500 rounded-lg">
-      <h1 class="font-bold text-2xl border border-gray-400 px-4 py-2 text-gray-800">
+  <div class="py-6 max-w-sm w-full lg:max-w-full ">
+    <div class="shadow-xs overflow-hide border rounded-lg">
+      <h1 class="bg-indigo-100 text-3xl border-b px-6 py-2 text-gray-800">
         {{ event.name }}
       </h1>
-      <p class="text-4xl font-semibold p-4">Grade: {{ event.latest_scan.grade }}</p>
-      <div class="p-4 mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+      <p class="text-4xl font-bold px-6 mt-5">Grade: {{ event.latest_scan.grade }}</p>
+      <div class="border-t p-4 mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
         <div class="mt-3 sm:mt-0 sm:ml-3">
           <g-link
             :to="event.path"
