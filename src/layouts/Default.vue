@@ -4,13 +4,13 @@
       <strong>
         <g-link
           to="/"
-          class="shadow-xl border-2 border-indigo-500 px-4 py-2 text-indigo-500 text-2xl rounded"
+          class="border-b border-indigo-500 px-4 py-2 text-indigo-500 text-2xl"
           >{{ $static.metadata.siteName }}</g-link
         >
       </strong>
       <nav class="nav p-2">
         <g-link
-          class="shadow-xl border-2 border-indigo-500 px-4 py-2 text-indigo-500 text-2xl hover:text-white hover:bg-indigo-500 rounded"
+          class="border-b border-indigo-500 px-4 py-2 text-indigo-500 text-2xl hover:text-white hover:bg-indigo-300"
           to="/leaderboard/"
           >Leaderboard</g-link
         >
@@ -21,7 +21,7 @@
         <slot />
       </main>
     </transition>
-    <footer class="w-full text-center border-t border-grey p-4 pin-b">
+    <footer class="mt-5 w-full text-center border-t border-grey py-4 pin-b">
       Built in quarantine with &#x1F499; by
       <a
         href="https://twitter.com/anoopkumarsb"
@@ -77,12 +77,6 @@ body {
 
 main {
   flex-grow: 1;
-}
-
-.nav__link {
-  margin-left: 20px;
-  padding: 10px 15px;
-  font-weight: bold;
 }
 
 .flex-row {
