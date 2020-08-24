@@ -1,23 +1,31 @@
 <template>
   <!-- This is the Event Card Preview Component-->
-  <div class="py-6 max-w-sm w-full lg:max-w-full ">
-    <div class="shadow-xs overflow-hide border rounded-lg">
-      <h1 class="bg-indigo-100 text-3xl border-b px-6 py-2 text-gray-800">
-        {{ event.name }}
-      </h1>
-      <p class="text-4xl font-bold px-6 mt-5">Grade: {{ event.latest_scan.grade }}</p>
-      <div class="border-t p-4 mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-        <div class="mt-3 sm:mt-0 sm:ml-3">
-          <g-link
+  <section class="text-gray-700">
+  <div class="w-full container p-5 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 w-full">
+        <div class="shadow-xs flex items-center border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col">
+          <div class="w-32 h-32 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-4xl font-bold text-indigo-500 flex-shrink-0">
+           {{event.latest_scan.grade}}
+          </div>
+          <div class="flex-grow items-center">
+            <h2 class="text-gray-900 text-2xl mb-3">{{event.name}}</h2>
+            <g-link
             :to="event.path"
-            class="w-full flex items-center justify-center p-3 border border-grey text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-200 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+            class="rounded-lg border-2 border-indigo-200 p-2 mt-3 text-indigo-500 inline-flex items-center"
           >
             Full Details
+             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
           </g-link>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
+</section>
 </template>
 <script>
 export default {
