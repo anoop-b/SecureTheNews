@@ -4,24 +4,10 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-const axios = require('axios')
+// const axios = require('axios')
 
 module.exports = function (api) {
-  api.loadSource(
-    async actions => {
-      const { data } = await axios.get('https://securethe.news/api/v1/sites/?limit=150')
-  
-      const collection = actions.addCollection({
-        typeName: 'BlogPost',
-      })
-  
-      for (const item of data.results) {
-        collection.addNode({
-          name: item.name,
-          domain: item.domain,
-          latest_scan:item.latest_scan,
-          pageInfo:data.pageInfo,
-        })
-      }
-    })
+  api.loadSource(async (store) => {
+    store.addMetadata("baseURL", "http://plugthebreach.com");
+  });
 }

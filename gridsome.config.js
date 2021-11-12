@@ -9,12 +9,18 @@ module.exports = {
   siteUrl: 'https://anoop-b.github.io',
   pathPrefix: '/SecureTheNews',
   templates: {
-    BlogPost: [
+    // BlogPost: [
+    //   {
+    //     path: '/about/:id',
+    //     component:  './src/templates/BlogPost.vue'
+    //   }
+    // ],
+    EventPage: [
       {
-        path: '/about/:id',
-        component:  './src/templates/BlogPost.vue'
+        path: '/breach/:id',
+        component:  './src/templates/EventPage.vue'
       }
-    ]
+    ],
   },
   plugins: [
     {
@@ -30,6 +36,28 @@ module.exports = {
         shouldPurgeUnusedKeyframes: true,
       }
       */
-    }
+    },
+    {
+      use: "@gridsome/source-airtable",
+      options: {
+        apiKey: "KEY", //required
+        baseId: "BASEID", //required
+        tables: [
+          {
+            name: "Tracker",
+            typeName: "EventPage", //required - needs to match template name
+            select: {}, //optional
+            links: [], //optional
+          },
+          // Comment in this section and the line in `templates` for multiple tables!
+          // {
+          //   name: "Parties",
+          //   typeName: "Parties", //required - needs to match template name
+          //   select: {}, //optional
+          //   links: [], //optional
+          // },
+        ],
+      },
+    },
   ]
 }
